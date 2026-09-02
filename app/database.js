@@ -11,15 +11,18 @@ function configureDatabase(event) {
 
 function openDatabase() {
   // TODO (Actividad 5): envolver indexedDB.open(DB_NAME, DB_VERSION) en una
-  // promesa y manejar upgradeneeded, success, error y blocked.
+  // promesa y manejar upgradeneeded, success, error y blocked, resolviendo
+  // o rechazando según el caso.
 }
 
 function readAll(database, storeName) {
-  // TODO (Actividad 6): leer todos los registros mediante el índice name de
-  // una transacción readonly.
+  // TODO (Actividad 6): envolver la transacción de readonly sobre el índice name
+  // para leer todos los registros y resolver con el resultado o rechazar con
+  // el error
 }
 
 function storeAll(database, storeName, records) {
-  // TODO (Actividad 6): ejecutar un put por cada registro dentro de una única
-  // transacción readwrite y resolver cuando la transacción emita complete.
+  // TODO (Actividad 6): envolver la transacción readwrite que contiene un put
+  // por cada registro y resolver cuando la transacción emita complete o
+  // rechazar con el error generado.
 }

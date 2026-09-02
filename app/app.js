@@ -203,7 +203,7 @@ async function initializeCatalogs() {
   let database = null;
 
   // TODO (Actividad 5): después de implementar openDatabase(), abrir la base
-  // y conservar la conexión en database.
+  // de datos y conservar la conexión en database.
 
   const [restaurantsResult, metroStationsResult] = await Promise.allSettled([
     loadRestaurantCatalog(database),
